@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.SongActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:id="@+id/iv_song_cover_art"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_album_art_foreground" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tv_song_name"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NOT AVAILABLE"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    tools:text="Song Name" />
+
+                <TextView
+                    android:id="@+id/tv_artist_name"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NOT AVAILABLE"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="15sp"
+                    tools:text="Artist Name" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp"
+            >
+
+            <TextView
+                android:id="@+id/tv_lyrics"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                tools:text="[Intro]\nWhoah-oh\nWhoah-oh\nWhoah-oh\nWhoah\n\n[Verse 1]\nI'm waking up to ash and dust\nI wipe my brow and I sweat my rust\nI'm breathing in the chemicals\nYeah, ah\n\n[Refrain]\nI'm breaking in, shaping up\nThen checking out on the prison bus\nThis is it, the apocalypse\nWhoa\n\n[Pre-Chorus]\nI'm waking up, I feel it in my bones\nEnough to make my system blow\nWelcome to the new age, to the new age\nWelcome to the new age, to the new age\n\n[Chorus]\nWhoa-oh, whoa\nI'm radioactive, radioactive\nWhoa-oh, whoa\nI'm radioactive, radioactive\n[Verse 2]\nI raise my flags, dye my clothes\nIt's a revolution, I suppose\nWe're painted red to fit right in\nWhoa\n\n[Refrain]\nI'm breaking in, shaping up\nThen checking out on the prison bus\nThis is it, the apocalypse\nWhoa\n\n[Pre-Chorus]\nI'm waking up, I feel it in my bones\nEnough to make my system blow\nWelcome to the new age, to the new age\nWelcome to the new age, to the new age\n\n[Chorus]\nWhoa-oh, whoa\nI'm radioactive, radioactive\nWhoa-oh, whoa\nI'm radioactive, radioactive\n\n[Bridge]\nAll systems go, the sun hasn't died\nDeep in my bones, straight from inside\n[Pre-Chorus]\nI'm waking up, I feel it in my bones\nEnough to make my system blow\nWelcome to the new age, to the new age\nWelcome to the new age, to the new age\n\n[Chorus]\nWhoa-oh, whoa\nI'm radioactive, radioactive\nWhoa-oh, whoa\nI'm radioactive, radioactive"
+                />
+
+        </ScrollView>
+
+
+
+</LinearLayout>
